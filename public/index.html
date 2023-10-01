@@ -3,10 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNIT</title>
+    <link rel="stylesheet" href="./css/const.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
 </head>
-<body>
-    This is some test content
+<body> 
+    <!-- Naming convention: -->
+    <!-- + All classes must be snake_cast -->
+    <!-- + ALL ids / names must be camelCase -->
+
+    <div class="container hero-cover">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" class="img-fluid logo" alt="PNIT logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active nav-text" aria-current="page" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Dự án</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Coaching</a>
+                  </li>
+                </ul>
+                <form class="d-flex search-form" role="search">
+                  <i class="search-icon fa fa-solid fa-magnifying-glass fa-lg"></i>
+                  <input class="search-input me-2" type="text" placeholder="Tìm kiếm">
+                </form>
+                <div class="day-light-controller-wrapper d-flex justify-content-center align-items-center">
+                  <button><img src="./images/sun_icon.png" alt="Sun icon"></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- MAIN HERO CONTENT -->
+          <div class="row h-75">
+            <div class="col-xl-7 col-12 d-flex align-items-center">
+                <div class="text-wrapper">
+                  <div class="primary-title col-md-8 col-12 mb-5"><span class="bg_svg">PNIT</span> - CLB Tin học trẻ trường THPT Phú nhuận</div>
+                  <div class="content-black-text col-md-8 col-12 hero-padding mb-3">Hội nhóm trao đổi, gặp gỡ và giao lưu các bạn có cùng chung đam mê sở thích về công nghệ thông tin nói chung</div>
+                  <div class="text-link hero-padding">Cùng tìm hiểu nào<i class=" ms-2 fa-solid fa-arrow-right" style="color: var(--main-accent);"></i></div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-12 d-flex align-items-center">
+              <div class="text-wrapper">
+                <div id="heroCarousel" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <img src="./images/coach_preview.png" alt="BG_HERO" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                            <img src="./images/coach_preview.png" alt="BG_HERO" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                            <img src="./images/coach_preview.png" alt="BG_HERO" class="img-fluid">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+  
+                <div class="img-hero-container row">
+                  <div class="col-3"> <img src="./images/coach_preview.png" alt="BG_HERO" class="square-pic"></div>
+                  <div class="col-3"> <img src="./images/coach_preview.png" alt="BG_HERO" class="square-pic"></div>
+                  <div class="col-3"> <img src="./images/coach_preview.png" alt="BG_HERO" class="square-pic"></div>
+                  <div class="col-3"> <img src="./images/coach_preview.png" alt="BG_HERO" class="square-pic"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+    </div>
+    <!-- IMG Section-->
+    <div class="w-100 h-25">
+      <img src="./images/bg_hero.png" alt="BG_HERO" class="img-fluid">
+    </div>
+
+
+
+    <!-- Main Content -->
+    <div class="container main-cover vertical-black-line">
+      <div class="secondary-title-wrapper w-50 mt-5">
+        <div class="secondary-title w-100">PNIT - Nguồn gốc và lợi ích</div>
+        <div class="secondary-decor w-25"></div>
+      </div>
+      <div class="row">
+        <div class="col main-text-content">
+        </div>
+        <div class="col illustrated-img d-flex justify-content-center">
+          <img src="./images/bg_main.png" alt="bg_main">
+        </div>
+      </div>
+    </div>
 </body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<!-- FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- JQERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/5.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
