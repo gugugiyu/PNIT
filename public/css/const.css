@@ -1,0 +1,133 @@
+/* Alumni Sans, 700*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&display=swap');
+
+/* Roboto, both regular and bold*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Noto+Serif&family=Roboto:wght@400;500;700&display=swap');
+
+/* Noto serif, regular */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Noto+Serif&family=Roboto:wght@400;700&display=swap');
+
+
+:root{
+    /* Common font size here, the additional responsive size should be in vw*/
+    --border-radius-light: 10px;
+    --border-radius-heavy: 15px;
+
+    --primary-title: calc(75px);
+    --secondary-title: calc(60px);
+
+    --main-title: calc(40px);
+    --sub-main-title: calc(19px + 0.1vw);
+
+    --text-link: calc(19px);
+
+    --card-title: calc(17px + 0.1vw);
+    --card-text: calc(12px + 0.1vw);
+
+    --content-text: calc(19px);
+
+    --cta-text: calc(9px + 0.1vw);
+
+
+
+    /*Common color is here*/
+    --black-text: #425466;
+    --white-text: #CDCDCD;
+    --light-accent-bg: #F6F9FC;
+    --main-accent: #13C5FB;
+}
+
+
+
+.primary-title{
+    font-size: var(--primary-title) !important;
+    font-family: 'Alumni Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    margin-left: 30px;
+    text-indent: -30px;
+    line-height: normal;
+}
+
+.secondary-title{
+    font-size: var(--secondary-title) !important;
+    font-family: 'Alumni Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+
+.main-title{
+    font-size: var(--main-title) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+
+.sub-main-title{
+    font-size: var(--sub-main-title) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+
+.card-title{
+    font-size: var(--card-title) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+
+.card-text{
+    font-size: var(--card-text) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    color: var(--black-text) !important;
+}
+
+.hero-padding{
+    margin-left: 30px;
+}
+
+.content-white-text{
+    font-size: var(--content-text) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    color: var(--white-text) !important;
+}
+
+.content-black-text{
+    font-size: var(--content-text) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    color: var(--black-text) !important;
+}
+
+.cta-text{
+    font-size: var(--cta-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black-text);
+}
+
+.nav-text{
+    font-size: var(--content-text) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    color: #000 !important;
+    margin-right: 2rem;
+}
+
+.text-link{
+    font-size: var(--text-link) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    color: var(--main-accent) !important;
+    text-decoration: underline;
+}
+
+button{
+    outline: none !important;
+    border: none !important;
+    background: none !important;
+}

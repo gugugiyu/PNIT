@@ -1,0 +1,76 @@
+.container{
+    max-width: 1200px;
+}
+
+.logo{
+    max-width: 85px;
+    max-height: 85px;
+}
+
+.search-form{
+    position: relative;
+}
+
+.search-form .search-input{
+    border-radius: var(--border-radius-light);
+    padding: 0.6rem 6rem 0.6rem 0;
+    border: 1px solid #00000075 !important;
+    box-shadow: 0 4px 4px 0 #00000025;
+    text-indent: 10px;
+}
+
+
+.search-form .search-input:focus{
+    outline: none !important;
+    border-color: var(--main-accent) !important;
+}
+
+.search-form .search-icon{
+    position: absolute;
+    right: 8%;
+    color: #00000075;
+    top: 50%;
+}
+
+.day-light-controller-wrapper{
+    border-radius: var(--border-radius-heavy);
+    background-color: var(--light-accent-bg);
+    width: max(2.5vw, 50px);
+    aspect-ratio: 1;
+}
+
+.square-pic{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+
+.bg_svg{
+    padding: 2rem;
+    color: #fff;
+    background: url(../images/primary_bg_text.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.hero-cover{
+    height: 70vh !important;
+}
+
+.main-cover{
+    min-height: 700vh !important;
+    padding: 0 30px !important;
+}
+
+.secondary-decor{
+    border: 3px solid #10C5FD;
+    border-radius: var(--border-radius-light);
+}
+
+.vertical-black-line{
+    border-left: 1px solid #00000010;
+    border-right: 1px solid #00000010;
+}
