@@ -14,20 +14,26 @@
     --border-radius-light: 10px;
     --border-radius-heavy: 15px;
 
-    --primary-title: calc(75px);
-    --secondary-title: calc(60px);
+    --primary-title: 75px;
+    --secondary-title: 60px;
 
-    --main-title: calc(40px);
-    --sub-main-title: calc(19px + 0.1vw);
+    --main-title: 32px;
+    --sub-main-title: 26px;
 
-    --text-link: calc(19px);
+    --text-link: 19px;
 
-    --card-title: calc(17px + 0.1vw);
-    --card-text: calc(12px + 0.1vw);
+    --card-title: 24px;
+    --card-text: 17px;
 
-    --content-text: calc(19px);
+    --content-text: 19px;
 
-    --cta-text: calc(9px + 0.1vw);
+    --cta-text: 15px;
+
+    --quote-text: 25px;
+    
+
+    /*Spacing is here */
+    --not-responsive-margin: 60px;
 
 
 
@@ -36,6 +42,8 @@
     --white-text: #CDCDCD;
     --light-accent-bg: #F6F9FC;
     --main-accent: #13C5FB;
+    --btn-text-cta: #8D28DC86;
+    --dark-theme: #01001D;
 }
 
 
@@ -110,6 +118,13 @@
     color: var(--black-text);
 }
 
+.quote-text{
+    font-size: var(--quote-text);
+    font-family: 'Noto-serif';
+    font-weight: 500;
+    color: #000;
+}
+
 .nav-text{
     font-size: var(--content-text) !important;
     font-family: 'Roboto', sans-serif !important;
@@ -126,8 +141,19 @@
     text-decoration: underline;
 }
 
+.emphasize-text{
+    background: linear-gradient(to right, #0EC5FE,
+                    #00AFC777);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 button{
     outline: none !important;
     border: none !important;
     background: none !important;
+}
+
+.quote-icon-container{
+    width: fit-content;
 }
