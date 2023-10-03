@@ -60,13 +60,12 @@
     height: 70vh !important;
 }
 
-.main-cover, .perk-cover, .quote-cover{
+.main-cover, .perk-cover, .quote-cover, .member-cover{
     min-height: 70vh !important;
     padding: 12rem var(--not-responsive-margin) 0 var(--not-responsive-margin) !important;
 }
 
-
-.dark-section-diagonal, .dark-section-cover, .dark-section-cover-project{
+.dark-section-diagonal, .dark-section-cover, .dark-section-cover-project, .member-cover{
     position: relative;
     bottom: 30vh;
 }
@@ -81,7 +80,7 @@
 }
 
 .dark-section-cover-project{
-    min-height: 170vh;
+    min-height: 90vh;
     background-color: var(--dark-theme);
 }
 
@@ -198,4 +197,88 @@
     border-left: 3px solid var(--main-accent);
     margin-left: calc(var(--not-responsive-margin) * -1 - 2px);
     padding-left: calc(var(--not-responsive-margin) - 2px);
+}
+
+div[class^="project-card"]{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: var(--border-radius-light);
+    overflow: hidden;
+}
+
+.card-project-image{
+    opacity: 1s;
+    transition: 200ms all ease;
+
+}
+
+.text-group{
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    transition: 300ms all cubic-bezier(.58,0,.02,1.44) !important;
+}
+.offset-group{
+    position: absolute;
+    inset: 0;
+    top: 20%;
+    border-radius: var(--border-radius-light);
+    background: linear-gradient(to top, #007193 4%, #007193c5 15%, #0071935c , transparent) !important;
+    transition: 200ms all ease;
+}
+
+
+.dark-section .project-card-2 .offset-group{
+    background: linear-gradient(to top, var(--project-card-color-2) 4%, var(--project-card-color-2-1) 15%, var(--project-card-color-2-2) , transparent) !important;
+}
+.dark-section .project-card-2 .bg-solid{
+    background: var(--project-card-color-2-1);
+}
+
+.dark-section .project-card-3 .offset-group{
+    background: linear-gradient(to top, var(--project-card-color-3) 4%, var(--project-card-color-3-1) 15%, var(--project-card-color-3-2) , transparent) !important;
+}
+.dark-section .project-card-3 .bg-solid{
+    background: var(--project-card-color-3-1);
+}
+
+
+.dark-section .project-card-4 .offset-group{
+    background: linear-gradient(to top, var(--project-card-color-4) 4%, var(--project-card-color-4-1) 15%, var(--project-card-color-4-2) , transparent) !important;
+}
+.dark-section .project-card-4 .bg-solid{
+    background: var(--project-card-color-4-1);
+}
+
+.bg-solid{
+    position: absolute;
+    inset: 0;
+    border-radius: var(--border-radius-light);
+    background: #007093c5;
+    opacity: 0.2;
+}
+
+div[class^="project-card"] img{
+    transform: scale(1.05);
+}
+
+div[class^="project-card"]:hover img{
+    transform: scale(1);
+}
+
+div[class^="project-card"]:hover .offset-group{
+    top: 0%;
+}
+
+div[class^="project-card"]:hover .offset-group .text-link{
+    position: relative;
+}
+
+div[class^="project-card"]:hover .text-link{
+    bottom: 1vh !important;
+}
+
+div[class^="project-card"]:hover .text-group{
+    bottom: 1vh;
 }
