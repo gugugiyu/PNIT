@@ -58,6 +58,8 @@
     --project-card-color-4-1: #008836c5;
     --project-card-color-4-2: #0088365c;
 
+
+    --member-card-decor: #263238;
 }
 
 
@@ -160,6 +162,13 @@
                     #00AFC777);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.member-text-role{
+    font-size: var(--cta-text);
+    text-transform: uppercase;
+    color: var(--black-text);
+    font-family: 'Roboto', sans-serif !important;
 }
 
 button{

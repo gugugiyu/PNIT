@@ -65,9 +65,14 @@
     padding: 12rem var(--not-responsive-margin) 0 var(--not-responsive-margin) !important;
 }
 
-.dark-section-diagonal, .dark-section-cover, .dark-section-cover-project, .member-cover{
+.dark-section-diagonal, .dark-section-cover, .dark-section-cover-project, .member-cover, .inviting-cover, .footer-cover{
     position: relative;
     bottom: 30vh;
+}
+
+.inviting-cover{
+    padding-top: 12rem;
+    height: fit-content;
 }
 
 .dark-section{
@@ -75,8 +80,12 @@
     padding: 0 var(--not-responsive-margin) !important;
 }
 
-.dark-section-cover{
+.dark-section-cover, .footer-cover{
     background-color: var(--dark-theme);
+}
+
+.footer-cover{
+    min-height: 10vh;
 }
 
 .dark-section-cover-project{
@@ -281,4 +290,37 @@ div[class^="project-card"]:hover .text-link{
 
 div[class^="project-card"]:hover .text-group{
     bottom: 1vh;
+}
+
+.member-card{
+    min-height: 35vh !important;
+    box-shadow: 0 4px 50px 0 #86868640;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    top: -40%;
+    border-radius: 50%;
+    height: 70%;
+    width: 100%;
+    background: var(--member-card-decor);
+    z-index: -1;
+}
+
+.inviting-nested-container{
+    position: absolute;
+    inset: 0;
+    padding-top: 12rem;
+}
+
+.inviting-nested-container .text-wrapper{
+    width: 40%;
+}
+
+.footer-cover .container{
+    height: 10vh;
 }
