@@ -62,7 +62,7 @@
 
 .main-cover, .perk-cover, .quote-cover, .member-cover{
     min-height: 70vh !important;
-    padding: 12rem var(--not-responsive-margin) 0 var(--not-responsive-margin) !important;
+    padding: var(--section-divider) var(--not-responsive-margin) 0 var(--not-responsive-margin) !important;
 }
 
 .dark-section-diagonal, .dark-section-cover, .dark-section-cover-project, .member-cover, .inviting-cover, .footer-cover{
@@ -71,7 +71,7 @@
 }
 
 .inviting-cover{
-    padding-top: 12rem;
+    padding-top: var(--section-divider);
     height: fit-content;
 }
 
@@ -210,14 +210,14 @@
 
 div[class^="project-card"]{
     position: relative;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     border-radius: var(--border-radius-light);
     overflow: hidden;
 }
 
 .card-project-image{
-    opacity: 1s;
+    width: 100%;
     transition: 200ms all ease;
 
 }
@@ -293,7 +293,7 @@ div[class^="project-card"]:hover .text-group{
 }
 
 .member-card{
-    min-height: 35vh !important;
+    min-height: 40vh !important;
     box-shadow: 0 4px 50px 0 #86868640;
     position: relative;
     overflow: hidden;

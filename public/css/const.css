@@ -34,6 +34,8 @@
 
     /*Spacing is here */
     --not-responsive-margin: 60px;
+    --hero-padding: 30px;
+    --section-divider: 12rem;
 
 
 
@@ -110,7 +112,7 @@
 }
 
 .hero-padding{
-    margin-left: 30px;
+    margin-left: var(--hero-padding);
 }
 
 .content-white-text{
@@ -179,4 +181,8 @@ button{
 
 .quote-icon-container{
     width: fit-content;
+}
+
+.overflow-preventer{
+    overflow: hidden;
 }

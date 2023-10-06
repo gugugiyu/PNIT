@@ -6,14 +6,16 @@
     <title>PNIT - Home</title>
     <link rel="stylesheet" href="./css/const.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/animation.css">
 </head>
 <body> 
-    <!-- Naming convention: -->
-    <!-- + All classes must be snake_cast -->
-    <!-- + ALL ids / names must be camelCase -->
+    <div class="overflow-preventer">
+        <!-- Naming convention: -->
+      <!-- + All classes must be snake_cast -->
+      <!-- + ALL ids / names must be camelCase -->
 
-    <div class="container hero-cover">
+      <div class="container-md hero-cover">
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -49,11 +51,11 @@
             <div class="col-xl-7 col-12 d-flex align-items-center">
                 <div class="text-wrapper">
                   <div class="primary-title col-md-8 col-12 mb-5"><span class="bg_svg">PNIT</span> - CLB Tin học trẻ trường THPT Phú nhuận</div>
-                  <div class="content-black-text col-md-8 col-12 hero-padding mb-3">Hội nhóm trao đổi, gặp gỡ và giao lưu các bạn có cùng chung đam mê sở thích về công nghệ thông tin nói chung</div>
+                  <div class="content-black-text col-md-8 col-9 hero-padding mb-3">Hội nhóm trao đổi, gặp gỡ và giao lưu các bạn có cùng chung đam mê sở thích về công nghệ thông tin nói chung. </div>
                   <div class="text-link hero-padding">Cùng tìm hiểu nào<i class=" ms-2 fa-solid fa-arrow-right" style="color: var(--main-accent);"></i></div>
                 </div>
             </div>
-            <div class="col-xl-5 col-12 d-flex align-items-center">
+            <div class="col-lg-5 col-lg-0 align-items-center">
               <div class="text-wrapper">
                 <div id="heroCarousel" class="carousel slide">
                   <div class="carousel-indicators">
@@ -81,7 +83,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-  
+
                 <div class="img-hero-container row">
                   <div class="col-3"> <img src="./images/coach_preview.png" alt="BG_HERO" class="square-pic"></div>
                   <div class="col-3"> <img src="./images/coach_preview.png" alt="BG_HERO" class="square-pic"></div>
@@ -96,14 +98,14 @@
     </div>
     <!-- IMG Section-->
     <div class="w-100 h-25">
-      <img src="./images/bg_hero.png" alt="BG_HERO" class="img-fluid">
+      <img src="./images/bg_hero.png" alt="BG_HERO" class="img-fluid non-responsive-img-hero">
     </div>
 
 
 
     <!-- Main Content -->
-    <div class="container main-cover vertical-black-line">
-      <div class="secondary-title-wrapper w-50">
+    <div class="container-md main-cover vertical-black-line">
+      <div class="secondary-title-wrapper col-lg-6 col-12">
         <div class="secondary-title w-100">PNIT - Nguồn gốc và lợi ích</div>
         <div class="secondary-decor w-25"></div>
       </div>
@@ -119,13 +121,13 @@
           </div>
         </div>
         <div class="col-xl-7 col-12 col illustrated-img d-flex justify-content-center">
-          <img src="./images/bg_main.png" alt="bg_main">
+          <img src="./images/bg_main.png" alt="bg_main" class="img-fluid">
         </div>
       </div>
     </div>
 
     <!-- PERK -->
-    <div class="container main-cover vertical-black-line">
+    <div class="container-md main-cover vertical-black-line">
       <div class="main-title col-xl-8 col-12">Điều kiện tham gia</span></div>
       <div class="sub-main-title mb-4">Ở đây chúng tôi <span class="emphasize-text">không làm thế</span></div>
 
@@ -140,12 +142,12 @@
               <div class="decor-icon-section"></div>
               <img src="./images/certificate.png" alt="certificate icon" class="perk-icon">
             </div>
-  
+
             <div class="text-wrapper mb-5">
               <div class="card-title mb-2">Chứng chỉ <span class="emphasize-text">PNIT</span></div>
               <div class="card-text">Khi hoàn thành 1 năm tham gia cùng PNIT, các bạn sẽ nhận được tấm bằng chứng nhận này.</div>
             </div>
-  
+
             <button class="cta-btn cta-text d-flex align-items-center" >
               <span class="decor-orb"></span>
               <span class="emphasize-text-cta">Xem thử</span>&nbsp;giấy chứng nhận
@@ -158,12 +160,12 @@
               <div class="decor-icon-section"></div>
               <img src="./images/certificate.png" alt="certificate icon" class="perk-icon">
             </div>
-  
+
             <div class="text-wrapper mb-5">
               <div class="card-title mb-2">Cộng đồng <span class="emphasize-text">PNIT</span></div>
               <div class="card-text">Cộng đồng riêng của CLB PNIT, chuyên về công nghệ, giúp bạn mài dũa khả năng của mình.</div>
             </div>
-  
+
             <button class="cta-btn cta-text d-flex align-items-center" >
               <span class="decor-orb"></span>
               <span class="emphasize-text-cta">Gia nhập </span>&nbsp;cộng đồng
@@ -176,12 +178,12 @@
               <div class="decor-icon-section"></div>
               <img src="./images/certificate.png" alt="certificate icon" class="perk-icon">
             </div>
-  
+
             <div class="text-wrapper mb-5">
               <div class="card-title mb-2">Coach <span class="emphasize-text">PNIT</span></div>
               <div class="card-text">Đào tạo các kiến thức chuyên môn cho các thành viên vào mỗi tuần, không yêu cầu kiến thức nền.</div>
             </div>
-  
+
             <button class="cta-btn cta-text d-flex align-items-center" >
               <span class="decor-orb"></span>
               <span class="emphasize-text-cta">Xem thử</span>&nbsp;nội dung
@@ -192,7 +194,7 @@
     </div>
 
     <!-- QUOTE SECTION -->
-    <div class="container quote-cover vertical-black-line d-flex justify-content-center">
+    <div class="container-md quote-cover vertical-black-line d-flex justify-content-center">
       <div class="quote-section d-flex flex-column align-items-center w-75">
         <div class="svg-decor-triangle">
           <svg width="100%" height="100%" viewBox="0 0 189 182" fill="none" xmlns="http://www.w3.org/2000/svg" class="path">
@@ -212,10 +214,10 @@
 
     <!-- DARK THEME SECTION -->
     <div class="container-fluid dark-section-diagonal ">
-      <div class="container dark-section vertical-white-line h-100"></div>
+      <div class="container-md dark-section vertical-white-line h-100"></div>
     </div>
     <div class="container-fluid dark-section-cover">
-      <div class="container dark-section vertical-white-line h-100">
+      <div class="container-md dark-section vertical-white-line h-100">
         <div class="main-title text-white mb-5">Coaching PNIT</div>
         <div class="row">
           <div class="col-lg-4 col-12">
@@ -226,22 +228,22 @@
             </div>
             <div class="text-link">Xem khóa học<i class=" ms-2 fa-solid fa-arrow-right" style="color: var(--main-accent);"></i></div>
           </div>
-          <div class="col-8 d-lg-flex justify-content-end mb-5">
+          <div class="col-8 d-lg-flex col-lg-0 justify-content-end mb-5">
             <img src="./images/coach_preview.png" alt="Coach" class="img-fluid">
           </div>
         </div>
       </div>
     </div> 
     <div class="container-fluid dark-section-cover-project horizontal-white-line">
-        <div class="container dark-section vertical-white-line h-100">
-          <div class="main-title text-white pt-5 mb-3">Các dự án tiêu biểu</div>
-          <div class="content-white-text col-7 pb-5">
+        <div class="container-md dark-section vertical-white-line h-100">
+          <div class="main-title text-white pt-lg-5 mb-3">Các dự án tiêu biểu</div>
+          <div class="content-white-text col-lg-7 col-12 pb-lg-5 pb-1">
             Từ robot cho đến các phần mềm chuyên dụng, hãy tham gia cùng chúng mình, các dự án không chỉ giúp ích cho bạn về kiến thức chuyên môn, mà còn là nơi tuyệt vời để giao lưu và kết bạn.
           </div>
           <div class="row">
             <div class="col-lg-6 col-12 d-flex flex-column">
-              <div class="project-card-1 mt-5">
-                <img src="./images/server_image.png" alt="server_image" class="img-fluid card-project-image">
+              <div class="project-card-1 mt-4">
+                <img src="./images/server_image.png" alt="server_image" class="card-project-image">
                 <div class="bg-solid w-100 h-100"></div>
                 <div class="offset-group">
                   <div class="text-group">
@@ -250,8 +252,8 @@
                   </div>
                 </div>
               </div>
-              <div class="project-card-2 mt-5">
-                <img src="./images/project_2.png" alt="server_image" class="img-fluid card-project-image">
+              <div class="project-card-2 mt-4">
+                <img src="./images/project_2.png" alt="server_image" class="card-project-image">
                 <div class="bg-solid w-100 h-100"></div>
                 <div class="offset-group">
                   <div class="text-group">
@@ -261,9 +263,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-12 d-flex flex-column">
+            <div class="col-lg-6 col-12 d-flex flex-column mt-lg-0 mt-5">
               <div class="project-card-3">
-                <img src="./images/project_3.png" alt="server_image" class="img-fluid card-project-image">
+                <img src="./images/project_3.png" alt="server_image" class="card-project-image">
                 <div class="bg-solid w-100 h-100"></div>
                 <div class="offset-group">
                   <div class="text-group">
@@ -272,8 +274,8 @@
                   </div>
                 </div>
               </div>
-              <div class="project-card-4 mt-5">
-                <img src="./images/project_4.png" alt="server_image" class="img-fluid card-project-image">
+              <div class="project-card-4 mt-4">
+                <img src="./images/project_4.png" alt="server_image" class="card-project-image">
                 <div class="bg-solid w-100 h-100"></div>
                 <div class="offset-group">
                   <div class="text-group">
@@ -284,17 +286,17 @@
               </div>
             </div>
           </div>
-          <div class="text-center nav-text mt-5 pb-5" style="color: var(--main-accent) !important; text-decoration: underline;">Xem thêm</div>
+          <div class="text-center nav-text mt-5 pb-lg-5 pb-0 w-100" style="color: var(--main-accent) !important; text-decoration: underline;">Xem thêm</div>
       </div> 
     </div>
 
     <!-- MEMBER SECTION -->
-    <div class="container member-cover vertical-black-line">
+    <div class="container-md member-cover vertical-black-line">
       <div class="main-title col-xl-8 col-12">Thành viên <span class="emphasize-text">nòng cốt</span></div>
       <div class="sub-main-title mb-4">Cùng đồng hành và hướng dẫn</div>
 
-      <div class="row">
-        <div class="member-card-wrapper col-4">
+      <div class="row gy-4  mt-md-4">
+        <div class="member-card-wrapper col-lg-4 col-sm-6 col-12 mt-md-0 mt-4">
           <div class="member-card  d-flex flex-column align-items-center justify-content-center">
             <img src="./images/member_image_1.png" alt="Member Image" class="img-fluid mb-4">
             <div class="card-title">Nguyễn Khắc Duy Anh</div>
@@ -306,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="member-card-wrapper col-4">
+        <div class="member-card-wrapper col-lg-4 col-sm-6 col-12 mt-md-0 mt-4">
           <div class="member-card d-flex flex-column align-items-center justify-content-center">
             <img src="./images/member_image_2.png" alt="Member Image" class="img-fluid mb-4">
             <div class="card-title">Nguyễn Hoàng Anh</div>
@@ -319,7 +321,7 @@
           </div>
         </div>
         
-        <div class="member-card-wrapper col-4">
+        <div class="member-card-wrapper col-lg-4 col-sm-6 col-12 mt-md-0 mt-4">
           <div class="member-card d-flex flex-column align-items-center justify-content-center">
             <img src="./images/member_image_3.png" alt="Member Image" class="img-fluid mb-4">
             <div class="card-title">Đặng Đăng Nguyên</div>
@@ -334,10 +336,10 @@
         </div>
       </div>
     
-<!-- INVITING SECTION -->
+  <!-- INVITING SECTION -->
   <div class="container-fluid inviting-cover">
-    <img src="./images/bg_invite.png" alt="Inviting image" width="100%">
-    <div class="h-100 container inviting-nested-container vertical-black-line d-flex justify-content-center">
+      <img src="./images/bg_invite.png" alt="Inviting image" width="100%" class="non-responsive-img-invite">
+    <div class="h-100 container-md inviting-nested-container vertical-black-line d-flex justify-content-center">
       <div class="d-flex flex-column justify-content-center text-wrapper">
         <div class="main-title col-12 text-center mb-5">Vậy thì các bạn đã muốn trở thành một <span class="emphasize-text">PNITer</span> chưa nào?</span></div>
       <div class="content-black-text text-center mb-4">Hãy cùng PNIT chinh phục bộ môn tin học, làm dày những kĩ năng chuyên môn về lập trình, và phong phú hóa bộ hành trang vào thế kỉ 21</div>
@@ -351,7 +353,7 @@
     </div>
   </div>
 
-<!--Footer secion-->
+  <!--Footer secion-->
   <div class="container-fluid footer-cover">
     <div class="container vertical-white-line">
       <div class="d-flex justify-content-between align-items-center h-100">
@@ -360,6 +362,7 @@
       </div>
     </div>
   </div>
+    </div>
 </body>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
