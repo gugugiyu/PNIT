@@ -34,6 +34,8 @@
 
     /*Spacing is here */
     --not-responsive-margin: 60px;
+    --hero-padding: 30px;
+    --section-divider: 12rem;
 
 
 
@@ -43,6 +45,7 @@
     --light-accent-bg: #F6F9FC;
     --main-accent: #13C5FB;
     --btn-text-cta: #8D28DC86;
+    --btn-text-cta-hover: #8D28DC56;
     --dark-theme: #01001D;
 
     --project-card-color-2: #8DA400;
@@ -110,7 +113,7 @@
 }
 
 .hero-padding{
-    margin-left: 30px;
+    padding-left: var(--hero-padding);
 }
 
 .content-white-text{
@@ -154,7 +157,20 @@
     font-family: 'Roboto', sans-serif !important;
     font-weight: 500 !important;
     color: var(--main-accent) !important;
+    text-decoration: none;
+}
+
+.text-link:hover{
     text-decoration: underline;
+}
+
+.text-link i{
+    transition: all 150ms ease;
+
+}
+
+.text-link:hover i{
+    transform: translate(20%) scale(1.1);
 }
 
 .emphasize-text{
@@ -180,3 +196,13 @@ button{
 .quote-icon-container{
     width: fit-content;
 }
+
+.overflow-preventer{
+    overflow: hidden;
+}
+
+*::selection:not(img){
+    background-color: var(--main-accent);
+    color: #fff;
+}
+
