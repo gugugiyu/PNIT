@@ -152,8 +152,8 @@
     }
     
     .hero-padding{
-        margin-left: var(--hero-padding);
-        margin-right: var(--hero-padding);
+        padding-left: var(--hero-padding);
+        padding-right: var(--hero-padding);
     }
     .dark-section{
         padding-top: 3rem !important;

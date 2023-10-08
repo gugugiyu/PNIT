@@ -41,10 +41,25 @@
 
 .square-pic{
     width: 100%;
-    aspect-ratio: 1;
-    object-fit: contain;
+    aspect-ratio: 1.25 / 1;
+    object-fit: cover;
+    border-radius: var(--border-radius-light);
 }
 
+.carousel-item img {
+    border-radius: var(--border-radius-light);
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+    object-fit: cover;
+}
+
+.img-hero-container button img{
+    transition: all 200ms ease-out;
+}
+
+.img-hero-container button:hover img{
+    transform: scale(1.05);
+}
 
 .bg_svg{
     padding: 2rem;
@@ -143,6 +158,7 @@
     background-color: #fff;
     aspect-ratio: 1;
     height: 220%;
+    min-height: 77px !important;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -163,6 +179,14 @@
     background-color: #fff !important;
     padding: 0.75rem 1.5rem;
     border-radius: var(--border-radius-light);
+}
+
+.cta-btn:hover .emphasize-text-cta{
+    color: var(--btn-text-cta-hover);
+}
+
+.cta-btn:hover .decor-orb{
+    transform: scale(1.05);
 }
 
 .emphasize-text-cta{
