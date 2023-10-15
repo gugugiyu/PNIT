@@ -202,7 +202,10 @@ button{
 }
 
 *::selection:not(img){
-    background-color: var(--main-accent);
+    background-color: var(--main-accent) !important;
     color: #fff;
+    background-clip:unset;
+    -webkit-text-fill-color: #fff;
+    -webkit-background-clip: text;
 }
 
